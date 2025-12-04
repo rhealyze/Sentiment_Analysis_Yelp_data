@@ -1,0 +1,11 @@
+FROM spark:latest  
+USER root
+WORKDIR /opt/spark
+
+COPY requirements.txt /tmp/requirements.txt
+
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+RUN mkdir -p /opt/spark/config /opt/spark/jobs /opt/spark/datasets
+
+USER 185

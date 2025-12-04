@@ -1,0 +1,47 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+
+# --- Virtual Environment ---
+venv/
+.env/
+.venv/
+
+# --- Config / Secrets ---
+src/config/config.py
+*.env
+*.key
+*.pem
+
+# --- Raw Datasets (Yelp Data) ---
+src/datasets/
+data/
+*.json
+
+# --- Logs ---
+logs/
+*.log
+
+# --- OS / System Files ---
+.DS_Store
+Thumbs.db
+*Zone.Identifier
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Docker / Build ---
+build/
+dist/
+*.egg-info/
+
+# --- Cache ---
+.cache/
+*.tmp
+*.bak
+*~
+
